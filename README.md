@@ -1,6 +1,6 @@
 # LFP_S2_2023_Practica_202200110
 
-# Manual Técnico - Práctica 1
+# Manual Técnico Práctica 1
 
 La practica esta desarrollada en el lenguaje python y utiliza la libreria `csv` para la manipulación de archivos CSV., se detalla una descripción de como esta implementado el código. 
 ## Estructura del Código
