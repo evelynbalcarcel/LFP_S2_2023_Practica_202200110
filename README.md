@@ -8,33 +8,33 @@ La practica esta desarrollada en el lenguaje python y utiliza la libreria `csv` 
 El código consta de varias funciones que trabajan juntas para administrar un sistema de inventario. A continuación, se presenta una descripción de las funciones y su funcionalidad:
 
 1. **`VerResultados()`**
-   - Descripción: Esta función muestra los resultados del inventario en la consola.
+     Esta función muestra los resultados del inventario en la consola.
    - Funcionalidad:
      - Itera a través de `inventario_dic`.
      - Imprime el nombre del producto, la cantidad disponible, el precio unitario y la ubicación.
 
 2. **`cargar_inventario()`**
-   - Esta función carga los datos iniciales del inventario desde un archivo `.inv` y los almacena en la lista `inventario_dic`.
+     Esta función carga los datos iniciales del inventario desde un archivo `.inv` y los almacena en la lista `inventario_dic`.
    - Funcionalidad:
      - Solicita al usuario que ingrese la ruta del archivo `.inv`.
      - Abre el archivo, lo lee y separa los datos en nombre, cantidad, precio unitario y ubicación.
      - Almacena la información en la lista `inventario_dic`.
 
 3. **`cargar_movimientos()`**
-   - Esta función carga y procesa los movimientos del inventario desde un archivo `.mov`, actualizando los valores de cantidad en `inventario_dic`.
+     Esta función carga y procesa los movimientos del inventario desde un archivo `.mov`, actualizando los valores de cantidad en `inventario_dic`.
    - Funcionalidad:
      - Solicita al usuario que ingrese la ruta del archivo `.mov`.
      - Abre el archivo, lee sus líneas y separa los datos en nombre, cantidad y ubicación.
      - Verifica la acción del movimiento (agregar_stock o vender_producto) y actualiza `inventario_dic` en consecuencia.
 
 4. **`crear_informe()`**
-   - Esta función crea un archivo de informe llamado "Archivo_informe.txt" que muestra los detalles del inventario.
+     Esta función crea un archivo de informe llamado "Archivo_informe.txt" que muestra los detalles del inventario.
    - Funcionalidad:
      - Abre el archivo en modo escritura.
      - Itera a través de `inventario_dic`, calcula el valor total para cada producto y escribe los detalles en el informe.
 
 5. **`menu()`**
-   - Esta función muestra un menú de opciones al usuario y coordina la interacción con el sistema de inventario.
+     Esta función muestra un menú de opciones al usuario y coordina la interacción con el sistema de inventario.
    - Funcionalidad:
      - Muestra el menú y permite al usuario seleccionar opciones.
      - Llama a las funciones dependiendo de la opción seleccionada.
